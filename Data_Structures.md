@@ -25,7 +25,11 @@
  
 ## Vídeo 3: Introduction to linked list
 * Para compreender bem listas linkadas, precisamos entender muito bem as limitações de se utilizar arrays.
+
 ** Em uma arquitetura comum, um variável do tipo integer consome 4 bytes de memória. Logo, um Array 4 quatro elemntos integer consumiria um bloco contínuo de memória de tamnho 16 bytes.
+
 ** Se quisermos aumentar o tamanho deste array, o computador não consegue simplesmente amplicar a memória alocada ao Array inicial com as memórias adjacentes ao bloco e por isso precisa criar uma nova array com um tamanho maior e copiar os dados originais neste novo bloco. Aqui, existe um problema, se separarmos mais memória que o necessário para o manuseio do Array (criando um array com tamanho muito maior que o necessário), a memória do computador estará sendo alocada de maneira pouco eficiente, por outro lado, se criarmos um array pequeno (de modo a precisar incluir novos elementos futuramente), precisaremos repetir o processo de criar um array completamente novo para alocar os dados antigos neste novo bloco de memória.
+
 ** A solução para este problema são as listas linkadas: ao invés de alocar um grande bloco único de memória para o array todo, é possível fazer requests para cada elemento do array separadamente. Cada elemento é armazenado em pedaços não contínuos de memória, neste caso, juntamente com um outro pedaço de memória alocado a ele que indica o endereço da memória com o próximo pedaço do Array. 
+
 ** Ao invés de pedir ao computador para alocar um array todo, solicitamos que ele aloque um bloco com duas variáveis: a integer e um pointer (que aponta para o próximo bloco de memória do array).
