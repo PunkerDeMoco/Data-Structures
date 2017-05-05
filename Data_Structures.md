@@ -17,11 +17,14 @@
 ## Vídeo 2: Data Structures: List as abstract data type
 
 * Listas como um ADT: 
-** armazenar elementos de um mesmo tipo, ler e modificar elementos em determinada posição. Arrays são exemplos de listas
+
+** Armazenar elementos de um mesmo tipo, ler e modificar elementos em determinada posição. Arrays são exemplos de listas
+
 ** Dica: quando trabalhamos com lista de modo que o tamanho desta lista é completamente preenchido por dados, podemos copiar estes dados e jogá-los em uma nova lista com o dobro do tamanho da lista e liberar memória usada na lista anterior.
+
 ** Custos em termos de tempo de certa operações em uma lista dinâmica:
- *** Access (ler/ escrever elementos em certa posição) - custo constante em termos de tempo (O(1))
- *** Inserir/ Remover/ Adicionar elementos - custo proporcional ao tamanho da lista (O(n))
+ - Access (ler/ escrever elementos em certa posição) - custo constante em termos de tempo (O(1))
+ - Inserir/ Remover/ Adicionar elementos - custo proporcional ao tamanho da lista (O(n))
  
 ## Vídeo 3: Introduction to linked list
 * Para compreender bem listas linkadas, precisamos entender muito bem as limitações de se utilizar arrays.
